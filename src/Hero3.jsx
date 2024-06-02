@@ -9,11 +9,10 @@ function Hero2() {
     <div className="hero3" style={Style3}>
       <h1>volumise and repair hair kit</h1>
       <p>
-        Experience the transformative power of nature. Infused with nourishing
-        ingredients, this product repairs damage and volumizes hair for a
-        healthy, revitalized look.
+        Experience the transformative power of nature. This product repairs
+        damage and volumizes hair for a healthy, revitalized look.
       </p>
-      <div className="button-container-discover">
+      <div className="button-container-discover2">
         <button className="button-discover">View Products</button>
       </div>
     </div>
