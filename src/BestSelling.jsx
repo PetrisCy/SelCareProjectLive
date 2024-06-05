@@ -1,6 +1,11 @@
 import React from "react";
 import Product from "./Product";
 import img1 from "../src/assets/perfume1.png";
+import img2 from "../src/assets/perfume2.png";
+import img3 from "../src/assets/perfume3.png";
+import img4 from "../src/assets/perfume4.png";
+import img5 from "../src/assets/perfume5.png";
+import img6 from "../src/assets/perfume6.png";
 
 function BestSelling() {
   const products = [
@@ -9,23 +14,23 @@ function BestSelling() {
       description: "Eau de Toilette",
     },
     {
-      imageUrl: img1,
+      imageUrl: img2,
       description: "Eau de Toilette",
     },
     {
-      imageUrl: img1,
+      imageUrl: img3,
       description: "Eau de Toilette",
     },
     {
-      imageUrl: img1,
+      imageUrl: img4,
       description: "Eau de Toilette",
     },
     {
-      imageUrl: img1,
+      imageUrl: img5,
       description: "Eau de Toilette",
     },
     {
-      imageUrl: img1,
+      imageUrl: img6,
       description: "Eau de Toilette",
     },
   ];

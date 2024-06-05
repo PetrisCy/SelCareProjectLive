@@ -1,5 +1,5 @@
-import { FaBars, FaTimes } from "react-icons/fa";
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,13 +21,16 @@ function Navigation() {
         </div>
         <ul className={menuOpen ? "open" : ""}>
           <li>
-            <a href="#">Shop</a>
+            <NavLink to="NotFound">Shop</NavLink>
+            {/* <a href="#">Shop</a> */}
           </li>
           <li>
-            <a href="#">About</a>
+            <NavLink to="/">About</NavLink>
+            {/* <a href="#">About</a> */}
           </li>
           <li>
-            <a href="#">Contact</a>
+            <NavLink to="/">Contact</NavLink>
+            {/* <a href="#">Contact</a> */}
           </li>
         </ul>
         <ul className={menuOpen ? "open" : ""}>

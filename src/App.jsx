@@ -4,18 +4,30 @@ import BestSelling from "./BestSelling";
 import Hero2 from "./Hero2";
 import Section from "./Section";
 import Hero3 from "./Hero3";
-
 import Footer from "./Footer";
+import NotFound from "./NotFound";
+import { HashRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div>
       <Hero />
       <Navigation />
-      <BestSelling />
-      <Hero2 />
-      <Section />
-      <Hero3 />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <BestSelling />
+              <Hero2 />
+              <Section />
+              <Hero3 />
+            </>
+          }
+        />
+
+        <Route path="/NotFound" element={<NotFound />} />
+      </Routes>
       <Footer />
     </div>
   );
