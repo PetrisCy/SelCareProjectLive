@@ -7,6 +7,8 @@ import Hero3 from "./Hero3";
 import Footer from "./Footer";
 import NotFound from "./NotFound";
 import { HashRouter, Route, Routes } from "react-router-dom";
+import Contact from "./Contact";
+import Shop from "./Shop";
 
 function App() {
   return (
@@ -26,7 +28,8 @@ function App() {
           }
         />
 
-        <Route path="/NotFound" element={<NotFound />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/shop" element={<Shop />} />
       </Routes>
       <Footer />
     </div>

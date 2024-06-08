@@ -4,6 +4,7 @@
   text-decoration: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 /* HERO */
@@ -418,59 +419,90 @@
 /* FOOTER */
 /* FOOTER */
 /* FOOTER */
-.footer-new {
-  padding: 8rem 0rem;
+
+.container {
+  max-width: 1170px;
+
+  margin: auto;
 }
 .footer {
-  width: 70%;
-  margin: auto;
+  background-color: #24262b;
+  padding: 70px 0;
+  margin-top: 70px;
+}
+.row {
   display: flex;
+  flex-wrap: wrap;
+}
+.footer-col {
+  width: 20%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-family: "EB Garamond", serif;
+  color: whitesmoke;
 
-  justify-content: space-between;
-  /* align-items: center; */
-}
-.footer-nav {
-  display: flex;
-  flex-direction: column;
-}
-.footer-navigator {
-  display: flex;
-}
-
-.footer-nav h1 {
-  box-shadow: 0 3px 0px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
   font-weight: 400;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  /* left: 0; */
+  bottom: -10px;
+  background-color: rgba(255, 0, 0, 0.459);
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
   font-family: "EB Garamond", serif;
-  text-align: center;
-  font-size: 1.6rem;
-  margin-bottom: 50px;
-  /* padding: 50px 0; */
-  color: rgba(59, 59, 59, 0.61);
+
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: white;
+  display: block;
+  transition: 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: rgb(230, 73, 73);
+  padding-left: 8px;
 }
 
-.footer-nav a {
-  font-family: "EB Garamond", serif;
+.socials i {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: #faf8f8;
+  margin: 0 10px 10px 0;
   text-align: center;
-  margin: 20px 20px;
-  color: rgba(59, 59, 59, 0.61);
-}
-.footer-nav a:hover {
+  line-height: 40px;
+  border-radius: 25px;
   color: black;
-}
-
-.subscribe h1 {
-  font-size: 1.6rem;
-  color: rgba(59, 59, 59, 0.61);
-  font-family: "EB Garamond", serif;
-  box-shadow: 0 3px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
   cursor: pointer;
 }
-.footer-new p {
-  margin-top: 50px;
-  text-align: center;
-  font-size: 1.2rem;
+.socials i:hover {
+  color: white;
+  background-color: #24262b;
 }
-
+@media (max-width: 767px) {
+  .footer-col {
+    width: 40%;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .footer-col h4::before {
+    text-align: center;
+  }
+}
 /* Responsive */
 /* Responsive */
 /* Responsive */
@@ -542,4 +574,210 @@
     width: 100%;
     margin: auto;
   }
+}
+
+/* Contact */
+/* Contact */
+/* Contact */
+/* Contact */
+
+.contact {
+  width: 80%;
+  margin: auto;
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact h1 {
+  font-family: "EB Garamond", serif;
+  color: rgba(59, 59, 59, 0.61);
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+}
+.contact p {
+  margin-top: 30px;
+  font-family: "EB Garamond", serif;
+  color: rgba(59, 59, 59, 0.61);
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-style: italic;
+  /* box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1); */
+  text-align: center;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.inputs input {
+  font-family: "EB Garamond", serif;
+  color: rgba(59, 59, 59, 0.61);
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 12px;
+  width: 25%;
+}
+.input-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contact textarea {
+  margin-top: 50px;
+  width: 100%;
+  height: 100px;
+  font-family: "EB Garamond", serif;
+  color: rgba(59, 59, 59, 0.61);
+  font-size: 1.2rem;
+  font-weight: 400;
+  resize: none;
+}
+
+.inputs button {
+  width: 30%;
+  padding: 10px;
+  margin-top: 50px;
+  background-color: rgba(255, 255, 16, 0.562);
+  border: 1px solid rgba(128, 128, 128, 0.637);
+  font-family: "EB Garamond", serif;
+  color: rgba(59, 59, 59, 0.61);
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+.inputs button:hover {
+  background-color: rgb(255, 255, 16);
+  color: black;
+}
+
+.contact2 {
+  width: 80%;
+  margin: auto;
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.contact2 h1 {
+  font-family: "EB Garamond", serif;
+  color: rgba(59, 59, 59, 0.61);
+  font-size: 2rem;
+  font-weight: 500;
+}
+.contact2 p {
+  margin-top: 20px;
+  font-family: "EB Garamond", serif;
+  color: rgba(59, 59, 59, 0.61);
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.prop {
+  width: 80%;
+  margin: 75px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  text-align: center;
+}
+.icon-container {
+  font-size: 2rem;
+  color: rgba(59, 59, 59, 0.61);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+@media (max-width: 500px) {
+  .input-text {
+    flex-direction: column;
+  }
+  .inputs input {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .contact textarea {
+    width: 100%;
+  }
+  .inputs {
+    width: 100%;
+  }
+  .prop {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Shop */
+/* Shop */
+/* Shop */
+/* Shop */
+
+.shop {
+  width: 80%;
+  margin: auto;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shop h1 {
+  font-family: "EB Garamond", serif;
+  color: rgba(59, 59, 59, 0.61);
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+}
+.filters {
+  margin-top: 75px;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+.filters button {
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.466);
+  font-family: "EB Garamond", serif;
+  color: rgba(59, 59, 59, 0.61);
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.filters button:hover {
+  color: black;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 1px solid black; */
+  justify-content: center;
+}
+.products img {
+  border: 1px solid rgba(0, 0, 0, 0.144);
+  padding: 5px;
+  width: 300px;
+  height: 300px;
 }

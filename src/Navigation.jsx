@@ -21,7 +21,7 @@ function Navigation() {
         </div>
         <ul className={menuOpen ? "open" : ""}>
           <li>
-            <NavLink to="NotFound">Shop</NavLink>
+            <NavLink to="shop">Shop</NavLink>
             {/* <a href="#">Shop</a> */}
           </li>
           <li>
@@ -29,7 +29,7 @@ function Navigation() {
             {/* <a href="#">About</a> */}
           </li>
           <li>
-            <NavLink to="/">Contact</NavLink>
+            <NavLink to="contact">Contact</NavLink>
             {/* <a href="#">Contact</a> */}
           </li>
         </ul>
