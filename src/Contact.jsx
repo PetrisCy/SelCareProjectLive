@@ -14,7 +14,7 @@ function Contact() {
             <input type="email" placeholder="Your email" />
           </div>
           <textarea name="test" id="test">
-            Your message
+            &nbsp; Your message
           </textarea>
           <button>Send message</button>
         </div>
@@ -23,12 +23,12 @@ function Contact() {
         <Contact2
           icon={<i className="fas fa-phone"></i>}
           title="Phone"
-          info="99865453"
+          info="357-99123456"
         />
         <Contact2
           icon={<i className="fas fa-envelope"></i>}
           title="Email"
-          info="peter_-05@hotmail.com"
+          info="DemoEmail@test.com"
         />
         <Contact2
           icon={<i className="fas fa-map-marker-alt"></i>}

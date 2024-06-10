@@ -6,6 +6,7 @@ import img3 from "../src/assets/perfume3.png";
 import img4 from "../src/assets/perfume4.png";
 import img5 from "../src/assets/perfume5.png";
 import img6 from "../src/assets/perfume6.png";
+import { NavLink } from "react-router-dom";
 
 function BestSelling() {
   const products = [

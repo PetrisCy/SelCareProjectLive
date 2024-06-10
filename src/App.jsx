@@ -9,6 +9,7 @@ import NotFound from "./NotFound";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import Contact from "./Contact";
 import Shop from "./Shop";
+import About from "./About";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
 
         <Route path="/contact" element={<Contact />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="/about" element={<About />} />
       </Routes>
       <Footer />
     </div>
