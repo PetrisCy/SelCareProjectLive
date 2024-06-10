@@ -52,7 +52,9 @@ function BestSelling() {
         ))}
       </div>
       <div className="button-container">
-        <button className="button-all-products">view all products</button>
+        <NavLink to="/shop" className="button-all-products">
+          view all products
+        </NavLink>
       </div>
     </div>
   );
